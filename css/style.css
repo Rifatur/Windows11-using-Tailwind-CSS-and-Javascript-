@@ -1,0 +1,98 @@
+body{
+    overflow: hidden;
+    background-image: url(../img/Windows11.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+/*.wallpaper{
+    position: absolute;
+}
+.wallpaper img{
+    min-width: 100%;
+    background-size: cover;
+}*/
+.search-bar{
+    background-color:#f2f5fa; 
+    width: 85%; 
+    margin: auto;
+}
+
+.taskbar{
+    position: absolute;
+    bottom: 0;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 110;
+}
+.nav-icon{
+    transition: all .2s ease-in;
+}
+.nav-icon:hover{
+    background-color:#f2f5fa;  
+}
+.discord{
+    height:auto;
+    width: auto;
+    z-index:122;
+    background-color: cadetblue;
+    display: none;
+}
+.fileExplorer{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height:600px;
+    width: 800px;
+    z-index: 112;
+    transition: all .2s ease-in;
+    display: none;
+    
+}
+.fileExplorer2{
+    background-color: #d4dae8;
+    height:600px;
+    width: 800px;
+    z-index: 112;
+    transition: all .2s ease-in;
+    display: none;
+    
+}
+
+.right-widget{
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+    z-index: 110;
+}
+.all-btn{
+    background-color:#f7f8fd;
+}
+.start-bar{
+    height: 600px;
+    width: 550px;
+    position: absolute;
+    bottom:-750px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.3s ease-in;
+}
+.start-bootom{
+    position: absolute;
+    bottom: 0;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.start-icons:hover{
+    background-color:#f2f5fa;  
+}

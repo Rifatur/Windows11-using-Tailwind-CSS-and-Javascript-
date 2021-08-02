@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Window 11 Design by RifaT</title>
+</head>
+<body>
+    <div>
+        <div class="h-12 sm:w-full w-full taskbar flex justify-center items-center gap-1">
+
+            <div class="w-10 h-10 rounded flex justify-center items-center start-btn nav-icon cursor-pointer active">
+                <img class="w-3/4"src="img/icons8-windows-11-480.png" alt="">
+            </div>
+            <div class="w-10 h-10 rounded flex justify-center items-center  nav-icon cursor-pointer">
+                <img class="w-3/4"src="img/icons8-search-384.png" alt="">
+            </div>
+            <div class="w-10 h-10 rounded flex justify-center items-center  nav-icon cursor-pointer explorer-btn">
+                <img class="w-3/4"src="img/icons8-file-explorer-96.png" alt="">
+            </div>
+            <div class="w-10 h-10 rounded flex justify-center items-center  nav-icon cursor-pointer">
+                <img class="w-3/4"src="img/Microsoft_Store_2021.png" alt="">
+            </div> 
+            <div class="w-10 h-10 rounded flex justify-center items-center  nav-icon cursor-pointer">
+                <img class="w-3/4"src="img/icons8-visual-studio-code-2019-240.png" alt="">
+            </div>  
+            <div class="w-10 h-10 rounded flex justify-center items-center discort-btn nav-icon cursor-pointer">
+                <img class="w-3/4"src="img/icons8-discord-new-240.png" alt="">
+            </div>        
+        </div>
+
+        <div class="right-widget h-10 flex ">
+            <div class="flex justify-center items-center mx-2">
+                <div class="w-8 h-8 my-2 flex items-center">
+                    <img class="w-3/4"src="img/64-wifi-outline.svg" alt="">
+               </div>
+               <div class="w-8 h-8 my-2 flex items-center">
+                <img class="w-3/4"src="img/191-speaker-outline.png" alt="">
+                </div>
+                <div class="w-8 h-8 my-2 flex items-center">
+                    <img class="w-3/4"src="img/battery-charging-solid-240.png" alt="">
+               </div>
+            </div>
+            <div class="flex items- flex-col">
+                <p class="text-xs tracking-tight clock" id="MyClockDisplay"onload="showTime()"></p>
+                
+                <p class="text-sm" id="date">
+                    </p>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex justify-center start-container widget-box">
+        <div class="rounded-md shadow start-bar overflow-hidden">
+            <div class=" my-6 h-18 w-full">
+                <div class="search-bar h-10 rounded-md flex gap-2 items-center border-b-2 border-blue-600">
+                    <img class="h-6 w-10 px-2"src="img/icons8-search-384.png" alt="">
+                    <p class="opacity-60">Type here to search</p>
+                </div>
+            </div>
+
+            <div class="px-10">
+                <div class="my-4  flex justify-between items-center h-6">
+                    <p class="font-sans text-base font-medium">Pined</p>
+                    <p class="px-3 bg-white text-sm flex justify-between shadow items-center rounded-md all-btn cursor-pointer">All apps<img class="ml-2 items-center h-3 w-3"src="img/icons8-right-96.png" alt=""></p>
+                </div>
+    
+                <div class="inner-content gap-2 grid grid-flow-col  grid-col-6 grid-rows-2 justify-between">
+                    <div class="w-16 h-16 p-1 my-2 flex items-center justify-center flex-col rounded cursor-pointer start-icons">
+                        <img class="w-3/4"src="img/icons8-microsoft-edge-240.png" alt="">
+                        <p class="text-xs tracking-tight">Edge</p>
+                    </div>
+                    <div class="w-16 h-16 p-1 my-2 my-2 flex items-center justify-center flex-col rounded cursor-pointer start-icons">
+                        <img class="w-3/4"src="img/icons8-mail-96.png" alt="">
+                        <p class="text-xs tracking-tight">Mail</p>
+                    </div>
+                    <div class="w-16 h-16 p-1 my-2 flex items-center justify-center flex-col rounded cursor-pointer start-icons explorer-btn2">
+                        <img class="w-3/4"src="img/icons8-file-explorer-96.png" alt="">
+                        <p class="text-xs tracking-tight">My Pc</p>
+                    </div>
+                    <div class="w-16 h-16 p-1 my-2 flex items-center justify-center rounded flex-col cursor-pointer start-icons">
+                        <img class="w-2/3"src="img/Microsoft_Store_2021.png" alt="">
+                        <p class="text-xs tracking-tight">Store</p>
+                    </div>
+                    <div class="w-16 h-16 p-1 my-2 flex items-center justify-center rounded flex-col cursor-pointer start-icons">
+                        <img class="w-3/4"src="img/icons8-microsoft-word-2019-240.png" alt="">
+                        <p class="text-xs tracking-tight">Ms Word</p>
+                    </div>
+                    <div class="w-16 h-16 p-1 my-2 flex items-center justify-center rounded flex-col cursor-pointer start-icons">
+                        <img class="w-3/4"src="img/icons8-microsoft-powerpoint-2019-240.png" alt="">
+                        <p class="text-xs tracking-tight">PowerPoint</p>
+                    </div>
+                    <div class="w-16 h-16 p-1 my-2 flex items-center justify-center rounded flex-col cursor-pointer start-icons">
+                        <img class="w-3/4"src="img/icons8-microsoft-excel-2019-240.png" alt="">
+                        <p class="text-xs tracking-tight">Ms Excel</p>
+                    </div>
+                    <div class="w-16 h-16 p-1 my-2 flex items-center justify-center rounded flex-col cursor-pointer start-icons">
+                        <img class="w-3/4"src="img/icons8-zoom-240.png" alt="">
+                        <p class="text-xs tracking-tight">Zoom</p>
+                    </div>
+                    <div class="w-16 h-16 p-1 my-2 flex items-center justify-center rounded flex-col cursor-pointer start-icons">
+                        <img class="w-3/4"src="img/icons8-microsoft-onenote-2019-240.png" alt="">
+                        <p class="text-xs tracking-tight">OneNote</p>
+                    </div>
+                    <div class="w-16 h-16 p-1 my-2 flex items-center justify-center rounded flex-col cursor-pointer start-icons">
+                        <img class="w-3/4"src="img/icons8-windows-calendar-240.png" alt="">
+                        <p class="text-xs tracking-tight">Calendar</p>
+                    </div>
+                    <div class="w-16 h-16 p-1 my-2 flex items-center justify-center rounded flex-col cursor-pointer start-icons">
+                        <img class="w-3/4"src="img/Ec_jU74XsAQbciQ.png" alt="">
+                        <p class="text-xs tracking-tight">Setting</p>
+                    </div>
+                    <div class="w-16 h-16  p-1 my-2 flex items-center justify-center rounded flex-col cursor-pointer start-icons">
+                        <img class="w-3/4"src="img/icons8-tiktok-240.png" alt="">
+                        <p class="text-xs tracking-tight">Tiktok</p>
+                    </div>
+                    
+                </div><!---End inner content-->
+    
+                <div class="my-4  flex justify-between items-center h-6">
+                    <p class="font-sans text-base font-medium">Recommended</p>
+                    <p class="px-3 shadow bg-white text-sm flex justify-between items-center rounded-md all-btn cursor-pointer">more <img class="ml-2 items-center h-3 w-3"src="img/icons8-right-96.png" alt=""></p>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex-1">
+                        <div class="flex my-2 items-centergap-2 cursor-pointer ">
+                            <div class="w-14 h-14">
+                                <img class="w-3/4"src="img/icons8-word-96.png" alt="">
+                            </div>                       
+                            <div class="flex flex-col">
+                                <p class="text-base font-normal">Travel Itinerary</p>
+                                <p class="text-xs tracking-tight">17min ago</p>
+                            </div>                        
+                        </div><!--End-->
+                        <div class="flex my-2 items-centergap-2 cursor-pointer ">
+                            <div class="w-14 h-14">
+                                <img class="w-3/4"src="img/icons8-export-excel-96.png" alt="">
+                            </div>                       
+                            <div class="flex flex-col">
+                                <p class="text-base font-normal">Expense Worksheet </p>
+                                <p class="text-xs tracking-tight">7h ago</p>
+                            </div>                        
+                        </div><!--End-->
+                        <div class="flex my-2 items-centergap-2 cursor-pointer ">
+                            <div class="w-14 h-14">
+                                <img class="w-3/4"src="img/icons8-microsoft-powerpoint-96.png" alt="">
+                            </div>                       
+                            <div class="flex flex-col">
+                                <p class="text-base font-normal">Adatum Company </p>
+                                <p class="text-xs tracking-tight">Yesterday at 1:15pm</p>
+                            </div>                        
+                        </div><!--End-->
+                    </div><!--Recommended Left Side-->
+    
+                    <div class="flex-1">
+    
+                        <div class="flex my-2 items-centergap-2 cursor-pointer ">
+                            <div class="w-14 h-14">
+                                <img class="w-3/4"src="img/icons8-word-96.png" alt="">
+                            </div>                       
+                            <div class="flex flex-col">
+                                <p class="text-base font-normal">Travel Itinerary</p>
+                                <p class="text-xs tracking-tight">17min ago</p>
+                            </div>                        
+                        </div><!--End-->
+                        <div class="flex my-2 items-centergap-2 cursor-pointer ">
+                            <div class="w-14 h-14">
+                                <img class="w-3/4"src="img/icons8-export-excel-96.png" alt="">
+                            </div>                       
+                            <div class="flex flex-col">
+                                <p class="text-base font-normal">Expense Worksheet </p>
+                                <p class="text-xs tracking-tight">7h ago</p>
+                            </div>                        
+                        </div><!--End-->
+                        <div class="flex my-2 items-centergap-2 cursor-pointer ">
+                            <div class="w-14 h-14">
+                                <img class="w-3/4"src="img/icons8-microsoft-powerpoint-96.png" alt="">
+                            </div>                       
+                            <div class="flex flex-col">
+                                <p class="text-base font-normal">Adatum Company Profile </p>
+                                <p class="text-xs tracking-tight">Yesterday at 1:15pm</p>
+                            </div>                        
+                        </div><!--End-->
+                    </div><!--Recommended Right Side-->
+                </div><!--Recommended Content End-->
+            </div>
+            
+            <div class=" start-bootom h-12 w-full px-10 flex justify-between items-center border-t-2 border-blue-100">
+                <div class="flex gap-2 items-center ">
+                    <p class="h-10 w-10 rounded-full overflow-hidden"> <img src="img/IMG_20191014_113841~1.jpg" alt=""></p>
+                    <p class="text-sm tracking-tight"> Rifatur Rahman</p>
+                </div>
+                <div class=" flex items-center justify-end">
+                    <img class="w-4 opacity-60"src="img/icons8-shutdown-52.png" alt="" srcset="">
+                </div>
+
+            </div>
+        </div><!--end start-bar-->
+
+
+    </div><!--End-->
+
+<div class="flex items-center justify-center min-h-screen min-w-full">
+    <div class="absolute"id="mydiv">
+        <div class="fileExplorer rounded-md " id="mydivheader"> 
+            <div class="h-8 w-full shadow absolute flex items-center justify-between px-1">
+                <div class="flex h-6 w-2/4 items-center gap-2">
+                    <img class="h-6 w-6" src="img/icons8-file-explorer-96.png" alt="" srcset="">
+
+                </div>
+                <div class="flex gap-4 mr-2">
+                    <img class="h-4 w-4 cursor-pointer"  src="img/icons8-minus-96.png" alt="" srcset="">
+                    <img class="h-4 w-4 cursor-pointer" src="img/icons8-minimize-window-96.png" alt="" srcset="">
+                    <img class="h-4 w-4 cursor-pointer" src="img/icons8-delete-96.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute"id="mydiv3">
+        <div class="fileExplorer2 rounded-md " id="mydivheader"> 
+            <div class="h-8 w-full shadow absolute flex items-center justify-between px-1">
+                <div class="flex h-6 w-2/4 items-center gap-2">
+                    <img class="h-6 w-6" src="img/icons8-file-explorer-96.png" alt="" srcset="">
+
+                </div>
+                <div class="flex gap-4 mr-2">
+                    <img class="h-4 w-4 cursor-pointer"  src="img/icons8-minus-96.png" alt="" srcset="">
+                    <img class="h-4 w-4 cursor-pointer" src="img/icons8-minimize-window-96.png" alt="" srcset="">
+                    <img class="h-4 w-4 cursor-pointer" src="img/icons8-delete-96.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute"id="mydiv2">
+        <div class="discord rounded-md overflow-hidden" id="mydivheader2">
+            <img src="img/discord.JPG" alt="" srcset="">
+        </div>
+    </div>
+</div>
+
+    
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
